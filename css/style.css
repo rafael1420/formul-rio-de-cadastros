@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     height: 80vh;
     display: flex;
@@ -53,7 +53,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .login-button button {
@@ -119,4 +119,102 @@ body {
 
 .continue-button button:hover {
     background-color: #5b55e3;
+}
+
+/* Responsividade com @media */
+
+/* 1. Telas maiores (zoom menor, mais espaço) */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+        height: 70vh;
+    }
+
+    .form-image img {
+        width: 35rem;
+    }
+
+    .form {
+        padding: 3rem;
+    }
+}
+
+/* 2. Telas médias (tablets e pequenos laptops) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        height: auto;
+        flex-direction: column; /* Disposição em coluna */
+    }
+
+    .form-image {
+        width: 100%;
+        padding: 2rem;
+        background-color: #fbe6c2; /* Leve mudança na cor para visualização */
+    }
+
+    .form {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+/* 3. Telas pequenas (celulares em modo retrato) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        box-shadow: none; /* Removendo sombra para simplificar o design em telas pequenas */
+        border-radius: 0; /* Bordas retas */
+    }
+
+    .form-image img {
+        width: 20rem;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .input-box input {
+        padding: 0.7rem;
+    }
+
+    .continue-button button {
+        padding: 0.7rem;
+    }
+}
+
+/* 4. Telas muito pequenas (celulares muito compactos) */
+@media (max-width: 480px) {
+    .form-image img {
+        width: 15rem;
+    }
+
+    .form {
+        padding: 1rem;
+    }
+
+    .form-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-box input {
+        padding: 0.6rem;
+    }
+
+    .continue-button button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1200px) and (min-width: 1024px) {
+    .container {
+        flex-direction: column; /* Ajusta layout para coluna */
+        height: auto;
+    }
+
+    .form-image, .form {
+        width: 100%;
+    }
 }
