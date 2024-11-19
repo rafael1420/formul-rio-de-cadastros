@@ -15,7 +15,7 @@
             <form action="#">
                 <div class="form-header"> <!--FORM HEADER-->
                     <div class="title"> <!--CADASTRAR-->
-                        <h1>cadastre-se</h1>
+                        <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button"> <!--BUTÃO DE LOGIN-->
                         <button><a href="#">Entrar</a></button>
@@ -66,19 +66,43 @@
                         <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Digite sua senha" required>
                     </div>
                 </div>
-            </div>
-
-            <div class="gender-inputs"> <!--GENEROS-->
-                <div class="gender-title">
-                    <h6>Gênero</h6>
-                </div>
-                <div class="gender-group">
-                    <div class="gender-input">
-                        <input type="radio" name="female" id="gender">
+                <div class="gender-inputs"> <!--GENEROS-->
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+                    <div class="gender-group"> <!--GRUPOS de GENEROS-->
+    
+                        <div class="gender-input">
+                            <input type="radio" name="female" id="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" name="male" id="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" name="others" id="gender">
+                            <label for="others">Outros</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" name="null" id="gender">
+                            <label for="null">Prefiro não dizer</label>
+                        </div>
+    
                     </div>
                 </div>
+                <div class="continue-button"> <!--BUTÃO CONTINUAR-->
+                    <button><a href="#">Continuar</a></button>
+                </div>
+    
             </div>
+
             
+
+
             </form>
         </div>
     </div>
