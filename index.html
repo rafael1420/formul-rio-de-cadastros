@@ -4,108 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Formulário de cadastros</title>
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
     <div class="container"> <!-- Início/Container -->
-        <div class="form-image"> <!--Classificação da img-->
-            <img src="img/undraw_spreadsheet_re_cn18.svg" alt=""> <!--Imagem-->
+        <div class="form-image"> <!-- Classificação da imagem -->
+            <img src="img/undraw_spreadsheet_re_cn18.svg" alt="Ilustração de Planilha">
         </div>
-        <div class="form"> <!--DIV do FORM-->
+        <div class="form"> <!-- DIV do FORM -->
             <form action="#">
-                <div class="form-header"> <!--FORM HEADER-->
-                    <div class="title"> <!--CADASTRAR-->
+                <div class="form-header"> <!-- FORM HEADER -->
+                    <div class="title"> <!-- Título -->
                         <h1>Cadastre-se</h1>
                     </div>
-                    <div class="login-button"> <!--BUTÃO DE LOGIN-->
-                        <button><a href="#">Entrar</a></button>
+                    <div class="login-button"> <!-- Botão de Login -->
+                        <button type="button">Entrar</button>
                     </div>
-                
-                </div> <!--INPUT-->
-                <div class="input-group"> <!--GRUPO DE INPUT-NOME-->
+                </div>
+
+                <div class="input-group"> <!-- Primeiro Nome -->
                     <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label> <!--PRIMEIRO NOME-->
+                        <label for="firstname">Primeiro Nome</label>
                         <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
                     </div>
                 </div>
-                <div> <!--INPUT-->
-                    <div class="input-group"> <!--GRUPO DE INPUT-NOME-->
-                        <div class="input-box">
-                            <label for="lastname">Sobrenome</label> <!--SOBRENOME-->
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="input-group">
-                        <div class="input-box">
-                            <label for="email">Sobrenome</label> <!--EMAIL-->
-                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="input-group">
-                        <div class="input-box">
-                            <label for="number">Celular</label> <!--NUMERO-->
-                            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="input-group">
-                        <div class="input-box">
-                            <label for="password">Senha</label> <!--SENHA-->
-                            <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="input-group">
+
+                <div class="input-group"> <!-- Sobrenome -->
                     <div class="input-box">
-                        <label for="Confirmpassword">Confirme sua Senha</label> <!--CONFIRME sua SENHA-->
-                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Digite sua senha" required>
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
                     </div>
                 </div>
-                <div class="gender-inputs"> <!--GENEROS-->
+
+                <div class="input-group"> <!-- E-mail -->
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+
+                <div class="input-group"> <!-- Celular -->
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                </div>
+
+                <div class="input-group"> <!-- Senha -->
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="input-group"> <!-- Confirme sua Senha -->
+                    <div class="input-box">
+                        <label for="confirmpassword">Confirme sua Senha</label>
+                        <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs"> <!-- Gêneros -->
                     <div class="gender-title">
                         <h6>Gênero</h6>
                     </div>
-                    <div class="gender-group"> <!--GRUPOS de GENEROS-->
-    
+                    <div class="gender-group"> <!-- Grupos de Gêneros -->
                         <div class="gender-input">
-                            <input type="radio" name="female" id="gender">
+                            <input type="radio" name="gender" id="female" value="Feminino">
                             <label for="female">Feminino</label>
                         </div>
-    
                         <div class="gender-input">
-                            <input type="radio" name="male" id="gender">
+                            <input type="radio" name="gender" id="male" value="Masculino">
                             <label for="male">Masculino</label>
                         </div>
-    
                         <div class="gender-input">
-                            <input type="radio" name="others" id="gender">
+                            <input type="radio" name="gender" id="others" value="Outros">
                             <label for="others">Outros</label>
                         </div>
-    
                         <div class="gender-input">
-                            <input type="radio" name="null" id="gender">
+                            <input type="radio" name="gender" id="null" value="Prefiro não dizer">
                             <label for="null">Prefiro não dizer</label>
                         </div>
-    
                     </div>
                 </div>
-                <div class="continue-button"> <!--BUTÃO CONTINUAR-->
-                    <button><a href="#">Continuar</a></button>
+
+                <div class="continue-button"> <!-- Botão Continuar -->
+                    <button type="submit">Continuar</button>
                 </div>
-    
-            </div>
-
-            
-
-
             </form>
         </div>
     </div>
-    
 </body>
 </html>
