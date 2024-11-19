@@ -121,9 +121,7 @@ body {
     background-color: #5b55e3;
 }
 
-/* Responsividade com @media */
-
-/* 1. Telas maiores (zoom menor, mais espaço) */
+/* Responsividade*/
 @media (min-width: 1200px) {
     .container {
         width: 70%;
@@ -139,18 +137,17 @@ body {
     }
 }
 
-/* 2. Telas médias (tablets e pequenos laptops) */
 @media (max-width: 1024px) {
     .container {
         width: 90%;
         height: auto;
-        flex-direction: column; /* Disposição em coluna */
+        flex-direction: column;
     }
 
     .form-image {
         width: 100%;
         padding: 2rem;
-        background-color: #fbe6c2; /* Leve mudança na cor para visualização */
+        background-color: #fbe6c2;
     }
 
     .form {
@@ -159,13 +156,12 @@ body {
     }
 }
 
-/* 3. Telas pequenas (celulares em modo retrato) */
 @media (max-width: 768px) {
     .container {
         width: 100%;
         height: auto;
-        box-shadow: none; /* Removendo sombra para simplificar o design em telas pequenas */
-        border-radius: 0; /* Bordas retas */
+        box-shadow: none; 
+        border-radius: 0;
     }
 
     .form-image img {
@@ -185,7 +181,6 @@ body {
     }
 }
 
-/* 4. Telas muito pequenas (celulares muito compactos) */
 @media (max-width: 480px) {
     .form-image img {
         width: 15rem;
@@ -210,7 +205,7 @@ body {
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
     .container {
-        flex-direction: column; /* Ajusta layout para coluna */
+        flex-direction: column;
         height: auto;
     }
 
